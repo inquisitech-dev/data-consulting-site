@@ -1,0 +1,32 @@
+├── netlify.toml
+├── package.json
+├── astro.config.mjs
+├── tailwind.config.mjs
+├── tsconfig.json
+├── public/
+│   ├── favicon.svg
+│   └── og-image.png
+└── src/
+    ├── content/
+    │   ├── config.ts
+    │   └── blog/
+    │       ├── modern-data-stack-2026.md
+    │       └── building-resilient-etl-pipelines.md
+    ├── layouts/
+    │   ├── BaseLayout.astro
+    │   └── BlogPostLayout.astro
+    ├── components/
+    │   ├── Navbar.astro
+    │   ├── Footer.astro
+    │   ├── SEO.astro
+    │   ├── ContactForm.astro
+    │   ├── ServiceCard.astro
+    │   └── TechStackBadge.astro
+    └── pages/
+        ├── index.astro
+        ├── services.astro
+        ├── blog/
+        │   ├── index.astro
+        │   └── [slug].astro
+        ├── contact.astro
+        └── success.astro
