@@ -1,8 +1,14 @@
 ---
+const serviceLinks = [
+  { name: 'Databricks Data Engineering', href: '/services/databricks-data-engineering/' },
+  { name: 'Power BI Reporting', href: '/services/power-bi-reporting/' },
+  { name: 'Data Analysis', href: '/services/data-analysis/' },
+  { name: 'Data Platform Strategy', href: '/services/data-platform-strategy/' },
+];
+
 const navLinks = [
-  { name: 'Services', href: '/services' },
   { name: 'Blog', href: '/blog' },
-  { name: 'Contact', href: '/contact' },
+  { name: 'Contact', href: '/contact/' },
 ];
 ---
 
@@ -17,19 +23,45 @@ const navLinks = [
 
     <!-- Desktop Navigation -->
     <nav class="hidden md:flex items-center space-x-8">
+      <details class="group relative">
+        <summary class="cursor-pointer list-none text-sm font-medium text-slate-300 hover:text-brand-accent transition-colors">
+          Services <span aria-hidden="true" class="ml-1">&#8964;</span>
+        </summary>
+        <div class="absolute left-0 top-full z-50 mt-3 hidden w-72 rounded-lg border border-slate-700 bg-slate-900 p-2 shadow-xl group-open:block">
+          <a href="/services/" class="block rounded-md px-3 py-2 text-sm font-semibold text-white hover:bg-slate-800">All Services</a>
+          {serviceLinks.map((link) => (
+            <a href={link.href} class="block rounded-md px-3 py-2 text-sm text-slate-300 hover:bg-slate-800 hover:text-white">
+              {link.name}
+            </a>
+          ))}
+        </div>
+      </details>
       {navLinks.map((link) => (
         <a href={link.href} class="text-sm font-medium text-slate-300 hover:text-brand-accent transition-colors">
           {link.name}
         </a>
       ))}
-      <a href="/contact" class="inline-flex items-center px-4 py-2 border border-brand-500/30 rounded-lg text-sm font-medium text-white bg-brand-600/20 hover:bg-brand-600/40 hover:border-brand-500 transition-all">
+      <a href="/contact/" class="inline-flex items-center px-4 py-2 border border-brand-500/30 rounded-lg text-sm font-medium text-white bg-brand-600/20 hover:bg-brand-600/40 hover:border-brand-500 transition-all">
         Book Architecture Review
       </a>
     </nav>
 
     <!-- Mobile Button -->
-    <div class="md:hidden flex items-center">
-      <a href="/contact" class="text-xs px-3 py-1.5 rounded-md bg-brand-600 text-white font-medium">
+    <div class="md:hidden flex items-center gap-4">
+      <details class="group relative">
+        <summary class="cursor-pointer list-none text-sm font-medium text-slate-300 hover:text-brand-accent">
+          Services <span aria-hidden="true" class="ml-1">&#8964;</span>
+        </summary>
+        <div class="absolute right-0 top-full z-50 mt-3 hidden w-72 max-w-[calc(100vw-2rem)] rounded-lg border border-slate-700 bg-slate-900 p-2 shadow-xl group-open:block">
+          <a href="/services/" class="block rounded-md px-3 py-2 text-sm font-semibold text-white hover:bg-slate-800">All Services</a>
+          {serviceLinks.map((link) => (
+            <a href={link.href} class="block rounded-md px-3 py-2 text-sm text-slate-300 hover:bg-slate-800 hover:text-white">
+              {link.name}
+            </a>
+          ))}
+        </div>
+      </details>
+      <a href="/contact/" class="text-xs px-3 py-1.5 rounded-md bg-brand-600 text-white font-medium">
         Contact
       </a>
     </div>

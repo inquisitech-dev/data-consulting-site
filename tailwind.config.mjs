@@ -11,7 +11,7 @@ export default {
           500: '#0284c7', // Sky Blue
           600: '#0369a1',
           900: '#0f172a', // Deep Navy slate
-          950: '#020617', // Midnight background
+          950: '#111827', // Graphite background
           accent: '#06b6d4', // Cyan accent
         },
       },

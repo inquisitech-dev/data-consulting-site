@@ -1,0 +1,15 @@
+---
+interface Props {
+  label: string;
+}
+
+const { label } = Astro.props;
+---
+
+<div
+  class="flex aspect-[4/3] w-full items-center justify-center rounded-lg border border-slate-700 bg-slate-800/70 p-6 text-center text-sm text-slate-400"
+  role="img"
+  aria-label={`Image placeholder for ${label}`}
+>
+  Image placeholder
+</div>

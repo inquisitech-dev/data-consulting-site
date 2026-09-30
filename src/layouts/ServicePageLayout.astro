@@ -1,0 +1,52 @@
+---
+import BaseLayout from './BaseLayout.astro';
+import ServiceVisualPlaceholder from '../components/ServiceVisualPlaceholder.astro';
+
+interface Props {
+  title: string;
+  description: string;
+  summary: string;
+  deliverables: string[];
+  outcomes: string[];
+}
+
+const { title, description, summary, deliverables, outcomes } = Astro.props;
+---
+
+<BaseLayout title={`${title} | Synapse Data Labs`} description={description}>
+  <article class="mx-auto max-w-7xl px-4 py-16 sm:px-6 sm:py-20 lg:px-8">
+    <a href="/services/" class="mb-8 inline-flex text-sm font-medium text-brand-accent hover:text-white">
+      <span aria-hidden="true" class="mr-2">&larr;</span> All services
+    </a>
+
+    <div class="grid items-center gap-10 lg:grid-cols-2 lg:gap-16">
+      <div>
+        <p class="mb-4 text-sm font-semibold uppercase tracking-wider text-brand-accent">Services</p>
+        <h1 class="text-4xl font-extrabold leading-tight text-white sm:text-5xl">{title}</h1>
+        <p class="mt-6 text-lg leading-relaxed text-slate-300">{summary}</p>
+        <a href="/contact/" class="mt-8 inline-flex rounded-lg bg-brand-500 px-5 py-3 font-medium text-white transition hover:bg-brand-600">
+          Discuss your project
+        </a>
+      </div>
+      <ServiceVisualPlaceholder label={title} />
+    </div>
+
+    <div class="mt-16 grid gap-12 border-t border-slate-800 pt-12 md:grid-cols-2">
+      <section>
+        <h2 class="text-2xl font-bold text-white">What we can deliver</h2>
+        <ul class="mt-6 space-y-4 text-slate-300">
+          {deliverables.map((item) => <li class="border-l-2 border-brand-accent pl-4">{item}</li>)}
+        </ul>
+      </section>
+      <section>
+        <h2 class="text-2xl font-bold text-white">Designed for better decisions</h2>
+        <p class="mt-4 leading-relaxed text-slate-300">
+          We start with your business goals and current data environment, then shape a practical engagement around the problems your team needs to solve.
+        </p>
+        <ul class="mt-6 space-y-4 text-slate-300">
+          {outcomes.map((item) => <li class="border-l-2 border-brand-500 pl-4">{item}</li>)}
+        </ul>
+      </section>
+    </div>
+  </article>
+</BaseLayout>
