@@ -1,0 +1,19 @@
+# Agent Directives: Standards, Conciseness & Scoped Inspections
+
+## 1. Coding Standards & Integrity
+- Adhere strictly to existing repository styling, typing configurations, and lint rules.
+- Do not bypass type systems: avoid untyped escapes (e.g., `any` in TypeScript or un-typed casts) unless strictly necessary.
+- Preserve domain-specific naming: use descriptive, explicit names over generic labels or cryptic abbreviations.
+- Run project linters, type checks, or test suites after modifications to confirm no regressions were introduced.
+
+## 2. Conciseness & Architecture
+- Flatten control flow: use early returns and guard clauses; avoid nesting deeper than 2 levels.
+- Apply YAGNI (You Aren't Gonna Need It): write concrete, minimal solutions for the current task. Do not create speculative abstractions, generic wrappers, or unused parameters.
+- Restrict function scope: keep functions small, single-purpose, and pure wherever feasible.
+- Minimize commentary churn: do not add comments that merely narrate what the code is doing. Document only non-obvious domain logic, complex edge cases, or necessary workarounds.
+
+## 3. Scoped Inspections & Minimal Diffs
+- Scope containment: modify ONLY the specific files, lines, and functions required to solve the task. 
+- Strict ban on opportunistic changes: do not refactor untouched legacy code, reformat surrounding blocks, or fix unrelated typos in adjacent code unless explicitly instructed.
+- Surgical file inspections: read only the specific lines or targeted modules necessary to understand context. Avoid broad, recursive codebase scans when targeted lookups (e.g., ripgrep or symbol searches) suffice.
+- Isolate functional logic from aesthetic reformatting: preserve the surrounding code style and indentation as-is.
