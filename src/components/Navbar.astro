@@ -7,63 +7,49 @@ const serviceLinks = [
 ];
 
 const navLinks = [
-  { name: 'Blog', href: '/blog' },
+  { name: 'Insights', href: '/blog' },
   { name: 'Contact', href: '/contact/' },
 ];
 ---
 
-<header class="sticky top-0 z-50 backdrop-blur-md bg-brand-950/80 border-b border-slate-800">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-    <a href="/" class="flex items-center gap-2">
-      <div class="w-8 h-8 rounded-lg bg-gradient-to-tr from-brand-500 to-brand-accent flex items-center justify-center font-bold text-white shadow-lg shadow-cyan-500/20">
-        S
-      </div>
-      <span class="text-xl font-bold tracking-tight text-white">Synapse<span class="text-brand-accent">Data</span></span>
+<header class="sticky top-0 z-50 border-b border-stone-200/80 bg-brand-950/90 backdrop-blur-md">
+  <div class="mx-auto flex h-20 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
+    <a href="/" class="flex items-center gap-2.5">
+      <div class="flex h-9 w-9 items-center justify-center rounded-full border-2 border-brand-500 font-serif text-lg font-bold text-brand-600">S</div>
+      <span class="text-xl font-semibold tracking-tight text-slate-900">Synapse<span class="text-brand-500"> Data Labs</span></span>
     </a>
 
-    <!-- Desktop Navigation -->
-    <nav class="hidden md:flex items-center space-x-8">
+    <nav class="hidden items-center space-x-8 md:flex">
       <details class="group relative">
-        <summary class="cursor-pointer list-none text-sm font-medium text-slate-300 hover:text-brand-accent transition-colors">
+        <summary class="cursor-pointer list-none text-sm font-medium text-slate-700 transition-colors hover:text-brand-600">
           Services <span aria-hidden="true" class="ml-1">&#8964;</span>
         </summary>
-        <div class="absolute left-0 top-full z-50 mt-3 hidden w-72 rounded-lg border border-slate-700 bg-slate-900 p-2 shadow-xl group-open:block">
-          <a href="/services/" class="block rounded-md px-3 py-2 text-sm font-semibold text-white hover:bg-slate-800">All Services</a>
+        <div class="absolute left-0 top-full z-50 mt-3 hidden w-72 rounded-xl border border-stone-200 bg-white p-2 shadow-xl group-open:block">
+          <a href="/services/" class="block rounded-md px-3 py-2 text-sm font-semibold text-slate-900 hover:bg-brand-50">All Services</a>
           {serviceLinks.map((link) => (
-            <a href={link.href} class="block rounded-md px-3 py-2 text-sm text-slate-300 hover:bg-slate-800 hover:text-white">
-              {link.name}
-            </a>
+            <a href={link.href} class="block rounded-md px-3 py-2 text-sm text-slate-700 hover:bg-brand-50 hover:text-brand-600">{link.name}</a>
           ))}
         </div>
       </details>
       {navLinks.map((link) => (
-        <a href={link.href} class="text-sm font-medium text-slate-300 hover:text-brand-accent transition-colors">
-          {link.name}
-        </a>
+        <a href={link.href} class="text-sm font-medium text-slate-700 transition-colors hover:text-brand-600">{link.name}</a>
       ))}
-      <a href="/contact/" class="inline-flex items-center px-4 py-2 border border-brand-500/30 rounded-lg text-sm font-medium text-white bg-brand-600/20 hover:bg-brand-600/40 hover:border-brand-500 transition-all">
-        Book Architecture Review
-      </a>
+      <a href="/contact/" class="inline-flex items-center rounded-full bg-brand-500 px-5 py-2.5 text-sm font-medium text-white transition-all hover:bg-brand-600">Let’s talk</a>
     </nav>
 
-    <!-- Mobile Button -->
-    <div class="md:hidden flex items-center gap-4">
+    <div class="flex items-center gap-4 md:hidden">
       <details class="group relative">
-        <summary class="cursor-pointer list-none text-sm font-medium text-slate-300 hover:text-brand-accent">
+        <summary class="cursor-pointer list-none text-sm font-medium text-slate-700 hover:text-brand-600">
           Services <span aria-hidden="true" class="ml-1">&#8964;</span>
         </summary>
-        <div class="absolute right-0 top-full z-50 mt-3 hidden w-72 max-w-[calc(100vw-2rem)] rounded-lg border border-slate-700 bg-slate-900 p-2 shadow-xl group-open:block">
-          <a href="/services/" class="block rounded-md px-3 py-2 text-sm font-semibold text-white hover:bg-slate-800">All Services</a>
+        <div class="absolute right-0 top-full z-50 mt-3 hidden w-72 max-w-[calc(100vw-2rem)] rounded-xl border border-stone-200 bg-white p-2 shadow-xl group-open:block">
+          <a href="/services/" class="block rounded-md px-3 py-2 text-sm font-semibold text-slate-900 hover:bg-brand-50">All Services</a>
           {serviceLinks.map((link) => (
-            <a href={link.href} class="block rounded-md px-3 py-2 text-sm text-slate-300 hover:bg-slate-800 hover:text-white">
-              {link.name}
-            </a>
+            <a href={link.href} class="block rounded-md px-3 py-2 text-sm text-slate-700 hover:bg-brand-50 hover:text-brand-600">{link.name}</a>
           ))}
         </div>
       </details>
-      <a href="/contact/" class="text-xs px-3 py-1.5 rounded-md bg-brand-600 text-white font-medium">
-        Contact
-      </a>
+      <a href="/contact/" class="rounded-full bg-brand-500 px-3 py-1.5 text-xs font-medium text-white">Contact</a>
     </div>
   </div>
 </header>

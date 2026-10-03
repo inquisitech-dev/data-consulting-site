@@ -5,14 +5,14 @@ export default {
     extend: {
       colors: {
         brand: {
-          50: '#eef6ff',
-          100: '#d9eaff',
-          200: '#bcdbff',
-          500: '#0284c7', // Sky Blue
-          600: '#0369a1',
-          900: '#0f172a', // Deep Navy slate
-          950: '#111827', // Graphite background
-          accent: '#06b6d4', // Cyan accent
+          50: '#eff5f0',
+          100: '#dce9df',
+          200: '#bfd4c5',
+          500: '#3f7058',
+          600: '#315943',
+          900: '#26332b',
+          950: '#fbfaf7',
+          accent: '#bd704d',
         },
       },
       fontFamily: {

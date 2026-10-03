@@ -9,21 +9,21 @@ const { frontmatter } = Astro.props;
       ← Back to articles
     </a>
     
-    <header class="mb-10 pb-8 border-b border-slate-800">
+    <header class="mb-10 border-b border-stone-200 pb-8">
       <div class="flex gap-2 mb-4">
         {frontmatter.tags.map((tag: string) => (
-          <span class="px-2.5 py-0.5 rounded-full text-xs font-medium bg-brand-500/10 text-brand-accent border border-brand-500/20">
+          <span class="rounded-full border border-brand-200 bg-brand-50 px-2.5 py-0.5 text-xs font-medium text-brand-600">
             {tag}
           </span>
         ))}
       </div>
-      <h1 class="text-3xl sm:text-5xl font-extrabold text-white tracking-tight mb-4">{frontmatter.title}</h1>
-      <p class="text-slate-400 text-sm">
+      <h1 class="mb-4 text-3xl font-semibold tracking-tight text-slate-900 sm:text-5xl">{frontmatter.title}</h1>
+      <p class="text-sm text-slate-600">
         Published on {new Date(frontmatter.pubDate).toLocaleDateString('en-US', { dateStyle: 'long' })} by {frontmatter.author}
       </p>
     </header>
 
-    <div class="prose prose-invert prose-cyan max-w-none">
+    <div class="prose max-w-none prose-headings:text-slate-900 prose-p:text-slate-700 prose-a:text-brand-600 prose-strong:text-slate-900">
       <slot />
     </div>
   </article>

@@ -7,9 +7,18 @@ const { label } = Astro.props;
 ---
 
 <div
-  class="flex aspect-[4/3] w-full items-center justify-center rounded-lg border border-slate-700 bg-slate-800/70 p-6 text-center text-sm text-slate-400"
+  class="flex aspect-[4/3] w-full items-center justify-center rounded-2xl border border-stone-200 bg-[#f3f2eb] p-6 text-center text-sm text-slate-600"
   role="img"
-  aria-label={`Image placeholder for ${label}`}
+  aria-label={`Illustration: ${label}`}
 >
-  Image placeholder
+  <div class="max-w-xs">
+    <div class="mb-5 flex items-end justify-center gap-2" aria-hidden="true">
+      <span class="h-10 w-8 rounded-t-full border-2 border-brand-500 bg-brand-100"></span>
+      <span class="h-16 w-8 rounded-t-full border-2 border-brand-500 bg-brand-200"></span>
+      <span class="h-12 w-8 rounded-t-full border-2 border-brand-500 bg-brand-100"></span>
+      <span class="mb-3 ml-1 rounded-full border-2 border-brand-accent bg-white px-3 py-1 text-xs font-semibold text-brand-900">aha!</span>
+    </div>
+    <p class="font-medium">{label}</p>
+    <p class="mt-1 text-xs text-slate-500">A clearer picture, one question at a time.</p>
+  </div>
 </div>
