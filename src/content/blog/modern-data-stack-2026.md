@@ -4,6 +4,9 @@ description: "How high-growth companies are eliminating reporting lag and multi-
 pubDate: 2026-03-15
 author: "Marcus Vance, Principal Data Architect"
 tags: ["Data Engineering", "Snowflake", "dbt", "Apache Iceberg"]
+topic: "Data engineering"
+technologies: ["Snowflake", "dbt", "Apache Iceberg"]
+cover: "engineering"
 featured: true
 ---
 

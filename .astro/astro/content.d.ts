@@ -141,9 +141,51 @@ declare module 'astro:content' {
 
 	type ContentEntryMap = {
 		"blog": {
+"analytics-adoption.md": {
+	id: "analytics-adoption.md";
+  slug: "analytics-adoption";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"choosing-useful-kpis.md": {
+	id: "choosing-useful-kpis.md";
+  slug: "choosing-useful-kpis";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"data-quality-first-steps.md": {
+	id: "data-quality-first-steps.md";
+  slug: "data-quality-first-steps";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"microsoft-fabric-guide.md": {
+	id: "microsoft-fabric-guide.md";
+  slug: "microsoft-fabric-guide";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
 "modern-data-stack-2026.md": {
 	id: "modern-data-stack-2026.md";
   slug: "modern-data-stack-2026";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"planning-a-data-platform.md": {
+	id: "planning-a-data-platform.md";
+  slug: "planning-a-data-platform";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"power-bi-desktop-guide.md": {
+	id: "power-bi-desktop-guide.md";
+  slug: "power-bi-desktop-guide";
   body: string;
   collection: "blog";
   data: InferEntrySchema<"blog">
