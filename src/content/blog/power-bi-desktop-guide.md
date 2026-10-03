@@ -2,7 +2,7 @@
 title: "A Practical Guide to Building Better Reports in Power BI Desktop"
 description: "A clear starting point for shaping data, choosing visuals, and building Power BI reports people can trust."
 pubDate: 2026-09-15
-author: "Synapse Data Labs"
+author: "InquisiTech"
 tags: ["Reporting", "Data modeling", "Business intelligence"]
 topic: "Analytics & reporting"
 technologies: ["Power BI Desktop"]

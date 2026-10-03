@@ -2,7 +2,7 @@
 title: "Planning a Data Platform That Can Grow with Your Team"
 description: "Questions to ask before choosing platform components, migration steps, and ownership models."
 pubDate: 2026-06-20
-author: "Synapse Data Labs"
+author: "InquisiTech"
 tags: ["Data platforms", "Architecture", "Planning"]
 topic: "Data platforms"
 technologies: ["Microsoft Fabric", "Snowflake"]

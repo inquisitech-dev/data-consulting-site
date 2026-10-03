@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import Hero from '../components/Hero.astro';
 import ContactForm from '../components/ContactForm.astro';
 import { getCollection } from 'astro:content';
 
@@ -29,84 +30,8 @@ const services = [
 ];
 ---
 
-<BaseLayout title="Synapse Data Labs | Clearer Data. Better Decisions." description="We help growing teams make data more reliable, useful, and ready for better business decisions.">
-  <section class="overflow-hidden bg-[#f5f3ed]">
-    <div class="mx-auto grid max-w-7xl items-center gap-12 px-4 py-16 sm:px-6 sm:py-24 lg:grid-cols-[1.05fr_0.95fr] lg:px-8 lg:py-28">
-      <div class="max-w-2xl">
-        <p class="mb-5 inline-flex items-center gap-2 rounded-full border border-brand-200 bg-white/70 px-4 py-2 text-sm font-medium text-brand-600">
-          <span class="h-2 w-2 rounded-full bg-brand-accent"></span>
-          Your thoughtful data partner
-        </p>
-        <h1 class="text-4xl font-semibold leading-[1.12] tracking-tight text-slate-900 sm:text-6xl">
-          Make better decisions with <span class="font-serif italic text-brand-600">data you can trust.</span>
-        </h1>
-        <p class="mt-6 max-w-xl text-lg leading-relaxed text-slate-700">
-          We help teams untangle their data, get a clearer view of the business, and take the next step with confidence. Practical expertise, in plain English.
-        </p>
-        <div class="mt-8 flex flex-wrap gap-3">
-          <a href="/contact/" class="inline-flex items-center rounded-full bg-brand-500 px-6 py-3 font-medium text-white shadow-sm transition hover:bg-brand-600">
-            Tell us what you’re working on <span aria-hidden="true" class="ml-2">→</span>
-          </a>
-          <a href="/services/" class="inline-flex items-center rounded-full border border-stone-300 bg-white px-6 py-3 font-medium text-slate-800 transition hover:border-brand-500 hover:text-brand-600">
-            Explore our services
-          </a>
-        </div>
-        <p class="mt-6 text-sm text-slate-600">No jargon. No one-size-fits-all playbook. Just a useful first conversation.</p>
-      </div>
-
-      <div class="relative mx-auto w-full max-w-xl" aria-label="Illustration of a team making sense of business data">
-        <div class="absolute -right-3 top-5 z-10 -rotate-3 rounded-2xl border-2 border-brand-accent bg-white px-4 py-3 font-serif text-lg italic text-slate-800 shadow-sm sm:right-0">
-          “Oh, now I see it!”
-        </div>
-        <div class="rounded-[2rem] border border-stone-200 bg-white p-5 shadow-[0_24px_70px_-32px_rgba(38,51,43,0.28)] sm:p-8">
-          <div class="flex items-center justify-between border-b border-stone-100 pb-5">
-            <div>
-              <p class="text-xs font-semibold uppercase tracking-[0.18em] text-brand-600">The clearer picture</p>
-              <p class="mt-1 text-lg font-semibold text-slate-900">A business, at a glance</p>
-            </div>
-            <div class="flex gap-1.5" aria-hidden="true">
-              <span class="h-2.5 w-2.5 rounded-full bg-[#e8b69b]"></span>
-              <span class="h-2.5 w-2.5 rounded-full bg-[#e7d292]"></span>
-              <span class="h-2.5 w-2.5 rounded-full bg-[#a8c5ae]"></span>
-            </div>
-          </div>
-          <div class="grid grid-cols-2 gap-3 py-5">
-            <div class="rounded-2xl bg-[#f5f3ed] p-4">
-              <p class="text-xs text-slate-600">This month</p>
-              <p class="mt-1 text-2xl font-semibold text-slate-900">$248k</p>
-              <p class="mt-1 text-xs font-medium text-brand-600">↗ 12% from last month</p>
-            </div>
-            <div class="rounded-2xl bg-brand-50 p-4">
-              <p class="text-xs text-slate-600">Orders fulfilled</p>
-              <p class="mt-1 text-2xl font-semibold text-slate-900">1,284</p>
-              <p class="mt-1 text-xs font-medium text-brand-600">On track this quarter</p>
-            </div>
-          </div>
-          <div class="rounded-2xl border border-stone-100 p-4">
-            <div class="mb-4 flex items-center justify-between">
-              <p class="text-sm font-medium text-slate-800">A trend worth noticing</p>
-              <span class="rounded-full bg-[#fbf1eb] px-2.5 py-1 text-xs font-medium text-[#9a573a]">Insight</span>
-            </div>
-            <div class="flex h-28 items-end gap-2 border-b border-l border-stone-200 px-3" aria-hidden="true">
-              <span class="h-[32%] flex-1 rounded-t-md bg-brand-200"></span>
-              <span class="h-[44%] flex-1 rounded-t-md bg-brand-200"></span>
-              <span class="h-[39%] flex-1 rounded-t-md bg-brand-200"></span>
-              <span class="h-[62%] flex-1 rounded-t-md bg-brand-200"></span>
-              <span class="h-[58%] flex-1 rounded-t-md bg-brand-200"></span>
-              <span class="h-[82%] flex-1 rounded-t-md bg-brand-500"></span>
-              <span class="h-full flex-1 rounded-t-md bg-brand-500"></span>
-            </div>
-            <div class="mt-2 flex justify-between px-2 text-[10px] text-slate-500"><span>JAN</span><span>MAR</span><span>MAY</span><span>JUL</span></div>
-          </div>
-          <div class="mt-4 flex items-center gap-3 rounded-xl bg-[#f5f3ed] px-4 py-3">
-            <span class="flex h-8 w-8 items-center justify-center rounded-full bg-white text-lg" aria-hidden="true">✳</span>
-            <p class="text-sm leading-snug text-slate-700">The numbers make sense. <span class="font-semibold text-slate-900">What should we do next?</span></p>
-          </div>
-        </div>
-        <span class="absolute -bottom-6 -left-5 -z-0 h-24 w-24 rounded-full bg-[#e5eadf]" aria-hidden="true"></span>
-      </div>
-    </div>
-  </section>
+<BaseLayout title="InquisiTech | Your Data, Decoded" description="Automated reporting, Power BI dashboards, and reliable data pipelines that help growing businesses turn messy spreadsheets into clear decisions.">
+  <Hero />
 
   <section class="mx-auto max-w-7xl px-4 py-20 sm:px-6 sm:py-24 lg:px-8">
     <div class="mb-10 grid gap-5 md:grid-cols-[0.8fr_1.2fr] md:items-end">

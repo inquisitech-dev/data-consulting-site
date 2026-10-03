@@ -1,0 +1,30 @@
+---
+interface Props {
+  className?: string;
+}
+const { className = "h-10" } = Astro.props;
+---
+<a href="/" class={`inline-flex items-center gap-3 group focus:outline-none ${className}`} aria-label="InquisiTech Home">
+  <!-- Mark (The Data Lens SVG goes here) -->
+  <div class="relative w-9 h-9 flex-shrink-0 transition-transform duration-300 group-hover:scale-105">
+    <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full h-full">
+      <circle cx="28" cy="28" r="20" stroke="#0284C7" stroke-width="4.5" stroke-linecap="round" stroke-dasharray="100 25" />
+      <circle cx="28" cy="28" r="6" fill="#06B6D4" fill-opacity="0.2" stroke="#06B6D4" stroke-width="2" />
+      <circle cx="28" cy="28" r="2" fill="#06B6D4" />
+      <path d="M38 38L48 48H58" stroke="#06B6D4" stroke-width="4.5" stroke-linecap="square" stroke-linejoin="miter" />
+      <circle cx="58" cy="48" r="2.5" fill="#0284C7" />
+    </svg>
+  </div>
+
+  <!-- Wordmark & Tagline -->
+  <div class="flex flex-col justify-center">
+    <div class="flex items-baseline tracking-tight font-display text-2xl leading-none">
+      <span class="font-bold text-slate-50">Inquisi</span>
+      <span class="font-normal text-sky-500">Tech</span>
+    </div>
+    <!-- Updated Tagline -->
+    <span class="text-[10px] font-sans uppercase tracking-[0.2em] text-slate-400 mt-1 font-semibold">
+      Your Data, Decoded.
+    </span>
+  </div>
+</a>

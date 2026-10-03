@@ -2,7 +2,7 @@
 title: "Microsoft Fabric: A Practical Starting Point for Your Data Platform"
 description: "Understand Fabric's main workloads and how to choose a small, useful first project for your team."
 pubDate: 2026-08-20
-author: "Synapse Data Labs"
+author: "InquisiTech"
 tags: ["Data platforms", "Analytics", "Architecture"]
 topic: "Data platforms"
 technologies: ["Microsoft Fabric"]

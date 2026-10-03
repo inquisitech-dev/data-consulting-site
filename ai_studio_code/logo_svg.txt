@@ -1,0 +1,24 @@
+<svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full h-full">
+  <defs>
+    <linearGradient id="lensGrad" x1="8" y1="8" x2="56" y2="56" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#06B6D4" /> <!-- Cyan -->
+      <stop offset="50%" stop-color="#0284C7" /> <!-- Sky Blue -->
+      <stop offset="100%" stop-color="#0369A1" />
+    </linearGradient>
+    <linearGradient id="beamGrad" x1="36" y1="36" x2="60" y2="60" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#06B6D4" />
+      <stop offset="100%" stop-color="#0284C7" />
+    </linearGradient>
+  </defs>
+
+  <!-- Outer Lens Ring (The "O" of the Q) -->
+  <circle cx="28" cy="28" r="20" stroke="url(#lensGrad)" stroke-width="4.5" stroke-linecap="round" stroke-dasharray="100 25" />
+  
+  <!-- Internal Focal Point -->
+  <circle cx="28" cy="28" r="6" fill="#06B6D4" fill-opacity="0.2" stroke="#06B6D4" stroke-width="2" />
+  <circle cx="28" cy="28" r="2" fill="#06B6D4" />
+
+  <!-- The "Q" Tail (Upward Circuit Trace) -->
+  <path d="M38 38L48 48H58" stroke="url(#beamGrad)" stroke-width="4.5" stroke-linecap="square" stroke-linejoin="miter" />
+  <circle cx="58" cy="48" r="2.5" fill="#0284C7" />
+</svg>

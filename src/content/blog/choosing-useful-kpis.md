@@ -2,7 +2,7 @@
 title: "Choosing KPIs That Help Teams Take Action"
 description: "A short framework for turning broad business goals into a focused, useful set of measures."
 pubDate: 2026-07-25
-author: "Synapse Data Labs"
+author: "InquisiTech"
 tags: ["Reporting", "Planning", "Measurement"]
 topic: "Analytics & reporting"
 technologies: ["Power BI Desktop"]

@@ -1,0 +1,49 @@
+---
+---
+<section class="relative min-h-[80vh] flex items-center justify-center overflow-hidden bg-brand-void py-20 px-4 sm:px-6">
+  <!-- Grid Background -->
+  <div class="absolute inset-0 bg-grid-pattern [background-size:40px_40px] opacity-30"></div>
+  <!-- Accent Glow -->
+  <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-brand-primary/20 blur-[120px] rounded-full pointer-events-none"></div>
+
+  <div class="relative z-10 max-w-4xl mx-auto text-center">
+    <div class="inline-flex items-center gap-2 px-4 py-2 mb-8 rounded-full border border-cyan-500/30 bg-cyan-950/30 backdrop-blur-sm">
+      <span class="w-2 h-2 rounded-full bg-cyan-400 animate-pulse"></span>
+      <span class="text-xs font-sans font-semibold tracking-wide text-cyan-200 uppercase">
+        Data Solutions for Growing Businesses
+      </span>
+    </div>
+
+    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-display font-bold text-slate-50 tracking-tight leading-[1.15]">
+      Stop guessing with <span class="text-transparent bg-clip-text bg-gradient-to-r from-slate-400 to-slate-600 line-through decoration-red-500/50">broken spreadsheets.</span><br />
+      <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-sky-500 mt-2 block">
+        Get Your Data, Decoded.
+      </span>
+    </h1>
+
+    <p class="mt-6 text-lg sm:text-xl text-slate-300 max-w-2xl mx-auto font-sans leading-relaxed">
+      We connect your disjointed systems, clean your data, and build reliable <strong class="text-white font-medium">Power BI & Tableau dashboards</strong> so your team can stop doing manual data entry and start making decisions.
+    </p>
+
+    <div class="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
+      <a href="#contact" class="w-full sm:w-auto px-8 py-4 rounded-md bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-bold text-base transition-all shadow-[0_0_20px_rgba(6,182,212,0.3)]">
+        Book a Free Discovery Call
+      </a>
+      <a href="/services" class="w-full sm:w-auto px-8 py-4 rounded-md border border-slate-700 hover:border-slate-500 bg-slate-900/50 text-slate-200 font-medium text-base transition-all">
+        See How We Do It
+      </a>
+    </div>
+
+    <!-- Tech Trust Bar -->
+    <div class="mt-16 pt-8 border-t border-brand-border">
+      <p class="text-sm font-sans text-slate-400 mb-4">Enterprise-grade engineering scaled for your business:</p>
+      <div class="flex flex-wrap justify-center gap-6 sm:gap-10 text-slate-500 font-display font-medium">
+        <span>Power BI</span>
+        <span>Tableau</span>
+        <span>dbt</span>
+        <span>Microsoft Fabric</span>
+        <span>Databricks</span>
+      </div>
+    </div>
+  </div>
+</section>

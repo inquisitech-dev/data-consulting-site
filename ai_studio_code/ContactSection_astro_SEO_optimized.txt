@@ -1,0 +1,59 @@
+---
+---
+<section id="contact" class="py-24 bg-brand-surface relative border-t border-brand-border">
+  <div class="max-w-3xl mx-auto px-4 sm:px-6">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl sm:text-4xl font-display font-bold text-slate-50">
+        Let's untangle your data.
+      </h2>
+      <p class="mt-4 text-slate-400 font-sans text-lg">
+        Fill out the form below. We'll schedule a 30-minute call to map out a solution to your biggest data bottleneck.
+      </p>
+    </div>
+
+    <div class="p-8 sm:p-10 rounded-xl bg-slate-900/80 border border-slate-800 shadow-xl">
+      <form
+        name="smb-consultation"
+        method="POST"
+        action="/success"
+        data-netlify="true"
+        netlify-honeypot="bot-field"
+        class="space-y-6"
+      >
+        <p class="hidden"><label>Don’t fill this out: <input name="bot-field" /></label></p>
+        <input type="hidden" name="form-name" value="smb-consultation" />
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          <div>
+            <label class="block text-sm font-sans font-medium text-slate-300 mb-2">Name *</label>
+            <input type="text" name="name" required class="w-full rounded bg-slate-950 border border-slate-700 text-slate-100 px-4 py-3 focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500" />
+          </div>
+          <div>
+            <label class="block text-sm font-sans font-medium text-slate-300 mb-2">Work Email *</label>
+            <input type="email" name="email" required class="w-full rounded bg-slate-950 border border-slate-700 text-slate-100 px-4 py-3 focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500" />
+          </div>
+        </div>
+
+        <div>
+          <label class="block text-sm font-sans font-medium text-slate-300 mb-2">What is your biggest data challenge right now?</label>
+          <select name="challenge" class="w-full rounded bg-slate-950 border border-slate-700 text-slate-100 px-4 py-3 focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500">
+            <option value="manual-work">We spend too much time manually updating spreadsheets</option>
+            <option value="silos">Our data is stuck in different systems (CRM, ERP, Finance)</option>
+            <option value="dashboards">We need reliable automated dashboards (Power BI/Tableau)</option>
+            <option value="infrastructure">We need to upgrade our backend (Data Warehouse/Lakehouse)</option>
+            <option value="other">Other / Not Sure</option>
+          </select>
+        </div>
+
+        <div>
+          <label class="block text-sm font-sans font-medium text-slate-300 mb-2">Briefly describe your current setup:</label>
+          <textarea name="message" rows="4" class="w-full rounded bg-slate-950 border border-slate-700 text-slate-100 px-4 py-3 focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500" placeholder="e.g., We use Salesforce and QuickBooks, but currently our operations manager has to combine exports manually every Friday..."></textarea>
+        </div>
+
+        <button type="submit" class="w-full py-4 rounded bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-bold text-lg transition-all">
+          Request Consultation
+        </button>
+      </form>
+    </div>
+  </div>
+</section>

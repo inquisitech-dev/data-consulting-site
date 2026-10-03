@@ -6,7 +6,7 @@ const blogCollection = defineCollection({
     title: z.string(),
     description: z.string().max(160),
     pubDate: z.date(),
-    author: z.string().default('Synapse Consulting Team'),
+    author: z.string().default('InquisiTech Team'),
     tags: z.array(z.string()),
     topic: z.string().default('Data & analytics'),
     technologies: z.array(z.string()).default([]),

@@ -2,7 +2,7 @@
 title: "Making Analytics Easier to Use Across the Business"
 description: "Ideas for helping people find trusted information and feel confident using it."
 pubDate: 2026-06-05
-author: "Synapse Data Labs"
+author: "InquisiTech"
 tags: ["Analytics", "Enablement", "Change management"]
 topic: "Data strategy"
 technologies: ["Power BI Desktop", "Microsoft Fabric"]

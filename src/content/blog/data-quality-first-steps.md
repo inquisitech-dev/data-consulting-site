@@ -2,7 +2,7 @@
 title: "A First Look at Data Quality: Where to Begin"
 description: "Practical first steps for finding and prioritizing the data issues that matter most."
 pubDate: 2026-07-10
-author: "Synapse Data Labs"
+author: "InquisiTech"
 tags: ["Data quality", "Data engineering", "Governance"]
 topic: "Data engineering"
 technologies: ["Microsoft Fabric"]

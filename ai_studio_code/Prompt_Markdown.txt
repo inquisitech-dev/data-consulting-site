@@ -1,0 +1,11 @@
+Role: Senior Astro.js & Tailwind CSS Developer.
+
+Task: Implement a full UI and Copy redesign for an IT Consulting website (`data-consulting-site`) targeting Small Businesses (10-50 employees). 
+
+Instructions for the Agent:
+1. Update `tailwind.config.mjs` using Space Grotesk (display), Inter (sans). Set the brand colors: Midnight (#020617), Sky (#0284C7), Cyan (#06B6D4).
+2. Create/Update `src/components/brand/Logo.astro` with the new SVG logo and the wordmark "InquisiTech", tagline "Your Data, Decoded". 
+3. Update `src/components/BaseHead.astro` with the new SEO metadata tailored for automated reporting and data pipelines for growing businesses. Ensure Google Fonts are properly linked.
+4. Replace the Homepage Hero component with the new SMB-focused copy provided ("Stop running your business on broken spreadsheets.").
+5. Replace the Contact component with the new Netlify form provided. Ensure it retains `data-netlify="true"`, honeypot fields, and exact form inputs (e.g., the dropdown about "biggest data challenge").
+6. Keep the architecture strict: Zero client-side JS where possible, leverage Astro's static generation, and ensure UI is fully responsive. 

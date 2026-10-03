@@ -1,4 +1,6 @@
 ---
+import Logo from './brand/Logo.astro';
+
 const serviceLinks = [
   { name: 'Databricks Data Engineering', href: '/services/databricks-data-engineering/' },
   { name: 'Power BI Reporting', href: '/services/power-bi-reporting/' },
@@ -12,12 +14,9 @@ const navLinks = [
 ];
 ---
 
-<header class="sticky top-0 z-50 border-b border-stone-200/80 bg-brand-950/90 backdrop-blur-md">
+<header class="sticky top-0 z-50 border-b border-slate-200/80 bg-white/95 backdrop-blur-md">
   <div class="mx-auto flex h-20 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
-    <a href="/" class="flex items-center gap-2.5">
-      <div class="flex h-9 w-9 items-center justify-center rounded-full border-2 border-brand-500 font-serif text-lg font-bold text-brand-600">S</div>
-      <span class="text-xl font-semibold tracking-tight text-slate-900">Synapse<span class="text-brand-500"> Data Labs</span></span>
-    </a>
+    <Logo />
 
     <nav class="hidden items-center space-x-8 md:flex">
       <details class="group relative">
@@ -40,13 +39,14 @@ const navLinks = [
     <div class="flex items-center gap-4 md:hidden">
       <details class="group relative">
         <summary class="cursor-pointer list-none text-sm font-medium text-slate-700 hover:text-brand-600">
-          Services <span aria-hidden="true" class="ml-1">&#8964;</span>
+          Menu <span aria-hidden="true" class="ml-1">&#8964;</span>
         </summary>
         <div class="absolute right-0 top-full z-50 mt-3 hidden w-72 max-w-[calc(100vw-2rem)] rounded-xl border border-stone-200 bg-white p-2 shadow-xl group-open:block">
           <a href="/services/" class="block rounded-md px-3 py-2 text-sm font-semibold text-slate-900 hover:bg-brand-50">All Services</a>
           {serviceLinks.map((link) => (
             <a href={link.href} class="block rounded-md px-3 py-2 text-sm text-slate-700 hover:bg-brand-50 hover:text-brand-600">{link.name}</a>
           ))}
+          <a href="/blog/" class="block rounded-md px-3 py-2 text-sm text-slate-700 hover:bg-brand-50 hover:text-brand-600">Blog</a>
         </div>
       </details>
       <a href="/contact/" class="rounded-full bg-brand-500 px-3 py-1.5 text-xs font-medium text-white">Contact</a>
